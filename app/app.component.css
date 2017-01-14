@@ -1,28 +1,84 @@
-h1 {
-  font-size: 1.2em;
-  color: #999;
-  margin-bottom: 0;
+html,body{
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
-h2 {
-  font-size: 2em;
-  margin-top: 0;
-  padding-top: 0;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
+section {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.selected {
+      background-color: #CFD8DC !important;
+      color: white;
+    }
+
+.lists {
+  align-items: left;
+  list-style-type: none;
+  margin: 10px 400px 10px 565px;
+  width: 20em;
+
+}
+
+.lists li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #E9EBEE;
+  margin: 1.3em;
+  padding: .75em 0;
+  height: 1.3em;
+  border-radius: 6px;
+
+}
+
+.lists li.selected:hover {
+  background-color: #99999A !important;
+  color: white;
+}
+
+
+.lists li:hover {
+  color: white;
+  background-color: #CDCDFA;
+  left: .1em;
+}
+
+
+.lists .text {
+  position: relative;
+  font-size: 21px;
+  font-weight: bold;
+  top: -3px;
+}
+
+
+.lists .badge {
   display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
+  font-size: 21px;
+  color: white;
+  background-color: #607D8B;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  padding: 0.8em 0.7em 0 0.7em;
+  height: 1.8em;
+  line-height: 1em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;*/
 }
-nav a:visited, a:link {
-  color: #607D8B;
-}
-nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
-}
-nav a.active {
-  color: #039be5;
+button.delete {
+  float:right;
+  margin-top: -2px;
+  margin-right: .8em;
+  background-color: #607D8B !important;
+  color:white;
 }

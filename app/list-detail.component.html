@@ -1,0 +1,19 @@
+<section id="details">
+    <div class="row">
+        <div class="col-lg-12">
+           <div *ngIf = "list">
+                <h2 class="list-title-show">{{list.title}}:</h2>
+                <ul class ="list-group-item lists">
+                    <li *ngFor="let item of list.items">
+                    {{item}}
+                    <button class="delete" (click)="deleteItem(list, item); $event.stopPropagation()">X</button>
+                    </li>
+                </ul>
+                <input #newItem
+                (keyup.enter)="addItem(list,newItem.value); newItem.value= ' ' "
+                >
+                <button (click)="addItem(list,newItem.value)">Add Item</button>
+            </div> 
+        </div>
+    </div>
+</section>
